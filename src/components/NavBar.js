@@ -1,3 +1,4 @@
+
 import { NavLink} from "react-router-dom";
 import "./NavBar.css";
 
@@ -16,6 +17,13 @@ function NavBar() {
         className="nav-link"
       >
         About
+      </NavLink>
+      {/* FIX: ADDED LOGIN LINK */}
+      <NavLink
+        to="/login"
+        className="nav-link"
+      >
+        Login
       </NavLink>
     </nav>
   );

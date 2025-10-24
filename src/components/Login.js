@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 
 function Login() {
@@ -19,7 +20,8 @@ function Login() {
 
   return (
     <form onSubmit={handleLogin}>
-      <label for="username">Username</label>
+      {/* FIX: Changed 'for' to 'htmlFor' */}
+      <label htmlFor="username">Username</label>
       <div>
         <input
           id="username"
@@ -29,7 +31,8 @@ function Login() {
           onChange={handleChange}
         />
       </div>
-      <label for="password">Password</label>
+      {/* FIX: Changed 'for' to 'htmlFor' */}
+      <label htmlFor="password">Password</label>
       <div>
         <input
           id="password"
